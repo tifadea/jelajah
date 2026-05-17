@@ -272,19 +272,30 @@ a.btn:hover {
     margin-bottom: 30px;
   }
 	
-  .nav-main {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
+.nav-main {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  background: rgba(0,0,0,0.5);
+  z-index: 1000;
+}
 
-  #userInfo {
-   color: white;
-   margin-right: 10px;
-   margin-bottom: 0;
-  }
+.nav-main a, .nav-main p {
+  color: white !important;
+  margin: 0 10px;
+}
 
-  #authArea {
-   display: flex;
-   align-items: center;
-  }
+#userInfo {
+  margin: 0 10px;
+  color: white;
+}
+
+#authArea {
+  margin-left: 10px;
+}
