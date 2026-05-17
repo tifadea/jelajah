@@ -271,4 +271,20 @@ a.btn:hover {
   .tm-circle-img-container {
     margin-bottom: 30px;
   }
-}
+	
+  .nav-main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #userInfo {
+   color: white;
+   margin-right: 10px;
+   margin-bottom: 0;
+  }
+
+  #authArea {
+   display: flex;
+   align-items: center;
+  }
