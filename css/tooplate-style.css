@@ -273,32 +273,35 @@ a.btn:hover {
   }
 	
 .nav-main {
-  position: fixed !important;
-  top: 0 !important;
-  right: 0 !important;
-  left: 0 !important;
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  justify-content: flex-end !important;
-  padding: 10px 20px !important;
-  background: rgba(0,0,0,0.6) !important;
-  z-index: 9999 !important;
-  width: 100% !important;
-  box-sizing: border-box !important;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 30px;
 }
 
 .nav-main a {
-  color: white !important;
-  margin: 0 8px !important;
-  text-decoration: none !important;
+    margin-right: 25px;
+    text-decoration: none;
+    color: white; 
 }
 
-.nav-main p {
-  color: white !important;
-  margin: 0 8px !important;
+#userStatus, 
+#authBtn {
+    margin-left: auto;  /* 
+    margin-right: 20px;
 }
 
-.nav-main #authArea {
-  margin-left: 8px !important;
+#userStatus {
+    margin-left: auto;
+}
+
+#authBtn {
+    margin-left: 10px;
+    margin-right: 0;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
