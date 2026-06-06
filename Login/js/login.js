@@ -16,7 +16,7 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
 
     if (data.status === "success") {
         alert("Login berhasil");
-        window.location.href = "index.html";
+        window.location.href = "../index.html";
     } else {
         alert(data.message || "Login gagal");
     }
