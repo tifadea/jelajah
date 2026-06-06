@@ -9,15 +9,15 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
         headers: {
             "Content-Type": "application/x-www-form-urlencoded"
         },
-        body: `action=register&username=${encodeURIComponent(username)}&email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`
+        body: `action=login&username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`
     });
 
     const data = await res.json();
 
     if (data.status === "success") {
-        alert("Registrasi berhasil, silakan login");
+        alert("Login berhasil");
         window.location.href = "index.html";
     } else {
-        alert(data.message || "Gagal registrasi");
+        alert(data.message || "Login gagal");
     }
 });
